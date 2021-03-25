@@ -17,6 +17,7 @@ apt update && apt install make binutils clang
 ```
 After this we can just compile:
 ```bash
+cd libft
 make all
 ```
 You can test the library with your own `main.c` and the `libft.h` file.
