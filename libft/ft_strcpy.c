@@ -6,7 +6,7 @@
 /*   By: jballest <jballest@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 15:48:58 by jballest          #+#    #+#             */
-/*   Updated: 2019/11/10 14:17:47 by jballest         ###   ########.fr       */
+/*   Updated: 2021/04/01 14:47:01 by jballest         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strcpy(char *dst, char *src)
 {
-	int n;
+	int	n;
 
 	n = 0;
 	while (*(src + n) != 0)

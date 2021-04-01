@@ -6,7 +6,7 @@
 /*   By: jballest <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 18:42:26 by jballest          #+#    #+#             */
-/*   Updated: 2019/11/08 18:44:01 by jballest         ###   ########.fr       */
+/*   Updated: 2021/04/01 14:55:03 by jballest         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 int	ft_tolower(int c)
 {
-	return (ft_isupper(c) ? (c + 32) : c);
+	if (ft_isupper(c))
+		return (c + 32);
+	else
+		return (c);
 }

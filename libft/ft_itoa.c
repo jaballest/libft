@@ -6,7 +6,7 @@
 /*   By: jballest <jballest@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 11:56:23 by jballest          #+#    #+#             */
-/*   Updated: 2019/11/15 15:35:03 by jballest         ###   ########.fr       */
+/*   Updated: 2021/04/01 14:35:21 by jballest         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,15 @@ char	*ft_itoa(int n)
 	int				is_negative;
 	int				nsize;
 
-	is_negative = n < 0 ? 1 : 0;
+	is_negative = ft_isnegative(n);
 	nsize = ft_ndigits(n) + is_negative;
-	if (!(num = (char *)malloc((nsize + 1) * sizeof(char))))
+	num = (char *)malloc((nsize + 1) * sizeof(char));
+	if (!num)
 		return (0);
-	onum = is_negative ? -n : n;
+	if (is_negative)
+		onum = -n;
+	else
+		onum = n;
 	num[nsize] = 0;
 	if (is_negative)
 		num[0] = '-';

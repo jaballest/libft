@@ -6,7 +6,7 @@
 /*   By: jballest <jballest@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/12 15:38:35 by jballest          #+#    #+#             */
-/*   Updated: 2019/11/18 13:16:01 by jballest         ###   ########.fr       */
+/*   Updated: 2021/04/01 15:00:20 by jballest         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static int	char_check(char c, const char *check)
 	return (1);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*str;
 	size_t	trb;
@@ -41,7 +41,8 @@ char		*ft_strtrim(char const *s1, char const *set)
 		return (ft_strdup(""));
 	while (char_check(s1[tra], set) == 0)
 		tra--;
-	if (!(str = (char *)malloc((tra - trb + 2) * sizeof(char))))
+	str = (char *)malloc((tra - trb + 2) * sizeof(char));
+	if (!str)
 		return (NULL);
 	ft_strlcpy(str, s1 + trb, tra - trb + 2);
 	return (str);

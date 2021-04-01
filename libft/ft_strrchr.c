@@ -6,7 +6,7 @@
 /*   By: jballest <jballest@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 16:45:44 by jballest          #+#    #+#             */
-/*   Updated: 2019/11/07 17:08:06 by jballest         ###   ########.fr       */
+/*   Updated: 2021/04/01 14:49:18 by jballest         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int i;
+	int	i;
 
 	i = ft_strlen((char *)s);
 	while (i >= 0)

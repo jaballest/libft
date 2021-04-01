@@ -6,7 +6,7 @@
 /*   By: jballest <jballest@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 18:52:42 by jballest          #+#    #+#             */
-/*   Updated: 2019/11/18 13:35:08 by jballest         ###   ########.fr       */
+/*   Updated: 2021/04/01 14:59:36 by jballest         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	calculate_num(const char *str, size_t i, int *sign)
 {
-	size_t res;
+	size_t	res;
 
 	res = 0;
 	while (ft_isdigit(*(str + i)) && *(str + i) != 0)
@@ -31,7 +31,7 @@ static int	calculate_num(const char *str, size_t i, int *sign)
 	return (res);
 }
 
-int			ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	size_t		i;
 	int			sign;
@@ -49,5 +49,8 @@ int			ft_atoi(const char *str)
 		i++;
 	}
 	res = calculate_num(str, i, &sign);
-	return ((res == -1 || res == 0) ? res : (res * sign));
+	if (res == -1 || res == 0)
+		return (res);
+	else
+		return (res * sign);
 }

@@ -6,7 +6,7 @@
 /*   By: jballest <jballest@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/16 12:45:16 by jballest          #+#    #+#             */
-/*   Updated: 2019/11/18 16:21:08 by jballest         ###   ########.fr       */
+/*   Updated: 2021/04/01 14:56:56 by jballest         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 t_list	*ft_lstnew(const void *content)
 {
-	t_list *lst;
+	t_list	*lst;
 
-	if (!(lst = malloc(sizeof(lst))))
+	lst = malloc(sizeof(lst));
+	if (!lst)
 		return (NULL);
 	if (content == NULL)
 		lst->content = NULL;

@@ -6,7 +6,7 @@
 /*   By: jballest <jballest@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 18:20:17 by jballest          #+#    #+#             */
-/*   Updated: 2019/11/15 18:20:31 by jballest         ###   ########.fr       */
+/*   Updated: 2021/04/01 14:32:33 by jballest         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,11 @@ void	ft_putstr_fd(char *s, int fd)
 
 	i = 0;
 	if (s)
+	{
 		while (s[i] != 0)
 		{
 			ft_putchar_fd(s[i], fd);
 			i++;
 		}
+	}
 }
