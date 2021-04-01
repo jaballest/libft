@@ -1,3 +1,4 @@
+[![Norminette v3](https://img.shields.io/badge/PASSED-115%2F100-green?style=for-the-badge&logo=42)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action) [![Norminette v3](https://img.shields.io/badge/norminette-v3-blue?style=for-the-badge&logo=42)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action) 
 # libft
 This was my first project for 42Madrid. It is the starting project of the new cursus.
 The aim of this project is to get a deep understanding of the C programming language by rewritting some useful functions and compiling them into a library for future use in other projects. It is completely done in C and compiled using a Makefile.
