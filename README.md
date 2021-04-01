@@ -21,3 +21,8 @@ cd libft
 make all
 ```
 You can test the library with your own `main.c` and the `libft.h` file.
+
+## Tests passed
+Currently the project has passed the following tests:
+* [Libfttest](https://github.com/jtoty/Libftest)
+* [libft-war-machine](https://github.com/ska42/libft-war-machine)
