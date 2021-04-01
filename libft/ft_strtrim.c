@@ -6,7 +6,7 @@
 /*   By: jballest <jballest@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/12 15:38:35 by jballest          #+#    #+#             */
-/*   Updated: 2021/04/01 15:00:20 by jballest         ###   ########.fr       */
+/*   Updated: 2021/04/01 16:00:37 by jballest         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*str;
 	size_t	trb;
 	size_t	tra;
-	size_t	pos;
 
 	trb = 0;
-	pos = 0;
 	if (!s1)
 		return (NULL);
 	while (char_check(s1[trb], set) == 0)

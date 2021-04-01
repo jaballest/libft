@@ -6,13 +6,13 @@
 /*   By: jballest <jballest@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/01 03:53:43 by jballest          #+#    #+#             */
-/*   Updated: 2021/04/01 03:56:27 by jballest         ###   ########.fr       */
+/*   Updated: 2021/04/01 16:07:05 by jballest         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isnegative(long long n)
+int	ft_isnegative(int n)
 {
 	if (n >= 0)
 		return (0);

@@ -6,7 +6,7 @@
 #    By: jballest <jballest@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/04 17:22:07 by jballest          #+#    #+#              #
-#    Updated: 2019/11/18 17:13:45 by jballest         ###   ########.fr        #
+#    Updated: 2021/04/01 17:18:43 by jballest         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRC=ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c			\
 	ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c		\
 	ft_wordcnt.c ft_itoa.c ft_ndigits.c ft_strmapi.c		\
 	ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c			\
-	ft_putnbr_fd.c
+	ft_putnbr_fd.c ft_isnegative.c
 
 SRC_BONUS=	ft_lstnew_bonus.c ft_lstadd_front_bonus.c		\
 			ft_lstadd_back_bonus.c ft_lstsize_bonus.c 		\

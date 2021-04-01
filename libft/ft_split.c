@@ -6,7 +6,7 @@
 /*   By: jballest <jballest@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/12 21:22:28 by jballest          #+#    #+#             */
-/*   Updated: 2021/04/01 14:46:09 by jballest         ###   ########.fr       */
+/*   Updated: 2021/04/01 16:01:23 by jballest         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,7 @@ char	**ft_split(const char *s, char c)
 {
 	char	**str;
 	int		wordn;
-	int		w;
 
-	w = -1;
 	if (!s)
 		return (NULL);
 	wordn = ft_wordcnt(s, c);
