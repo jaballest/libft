@@ -1,4 +1,4 @@
-[![Passed 115/100](https://img.shields.io/badge/PASSED-115%2F100-green?style=for-the-badge&logo=42)]
+![Passed 115/100](https://img.shields.io/badge/PASSED-115%2F100-green?style=for-the-badge&logo=42)
 [![Norminette v3](https://img.shields.io/badge/norminette-v3-blue?style=for-the-badge&logo=42)](https://github.com/42School/norminette) 
 # libft
 This was my first project for 42Madrid. It is the starting project of the new cursus.
