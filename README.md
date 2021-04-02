@@ -11,7 +11,7 @@ The project consists of 50 functions all written in `.c`, a headerfile `.h` and 
 ## How to test it?
 You can start by cloning this repository:
 ```bash
-git clone https://github.com/jaballest/libft.git libft
+git clone https://github.com/xpartano/libft.git libft
 ```
 To compile thisd project you first have to make sure you have all dependencies installed:
 ```bash
